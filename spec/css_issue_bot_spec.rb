@@ -19,7 +19,7 @@ RSpec.describe 'styling' do
     
     it 'corrects the .completed font family declaration' do
       selector = parsed_css.find_by_selector('.completed')[0]
-      expect(selector).to include("font-size: 12px;"), "Missing properly formatted .completed font size declaration"
+      expect(selector).to include("font-family: Times;"), "Missing properly formatted .completed font size declaration"
     end
     
     it 'corrects the #tasks .completed background declaration' do
